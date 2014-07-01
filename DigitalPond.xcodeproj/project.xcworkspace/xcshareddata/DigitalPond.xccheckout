@@ -5,36 +5,36 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>78B26CE9-E096-48D1-B509-C361AA48DAFD</string>
+	<string>8B616C4C-06E5-4E5C-B6B7-65E466A98405</string>
 	<key>IDESourceControlProjectName</key>
 	<string>DigitalPond</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>57DA16E4-B0F2-4730-A8EF-688667C471E7</key>
-		<string>https://github.com/MadArkitekt/Toolbox.git</string>
+		<key>3E6985ED-C408-4EAF-B1C8-60ADA36AD559</key>
+		<string>https://github.com/MadArkitekt/ChromaPulse.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>DigitalPond/DigitalPond.xcodeproj/project.xcworkspace</string>
+	<string>DigitalPond.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>57DA16E4-B0F2-4730-A8EF-688667C471E7</key>
-		<string>../../..</string>
+		<key>3E6985ED-C408-4EAF-B1C8-60ADA36AD559</key>
+		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/MadArkitekt/Toolbox.git</string>
+	<string>https://github.com/MadArkitekt/ChromaPulse.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>57DA16E4-B0F2-4730-A8EF-688667C471E7</string>
+	<string>3E6985ED-C408-4EAF-B1C8-60ADA36AD559</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>57DA16E4-B0F2-4730-A8EF-688667C471E7</string>
+			<string>3E6985ED-C408-4EAF-B1C8-60ADA36AD559</string>
 			<key>IDESourceControlWCCName</key>
-			<string>Toolbox</string>
+			<string>ChromaPulse</string>
 		</dict>
 	</array>
 </dict>

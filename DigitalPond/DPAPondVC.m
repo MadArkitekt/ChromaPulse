@@ -33,11 +33,13 @@
         
         UIButton *swipeArea = [[UIButton alloc] initWithFrame:CGRectMake(20, 20, 280, 40)];
         swipeArea.backgroundColor = [UIColor colorWithWhite:0.0 alpha:0.1];
+        swipeArea.layer.cornerRadius = 20;
         [self.view addSubview:swipeArea];
         
         
         UISwipeGestureRecognizer *swipeRight = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipe:)];
         swipeRight.direction = UISwipeGestureRecognizerDirectionRight;
+        
         UISwipeGestureRecognizer *swipeLeft = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipe:)];
         swipeLeft.direction = UISwipeGestureRecognizerDirectionLeft;
         [swipeArea addGestureRecognizer:swipeLeft];
@@ -49,7 +51,7 @@
                             [UIColor colorWithRed:0.741f green:0.400f blue:0.984f alpha:1.0f],
                             [UIColor colorWithRed:0.984f green:0.863f blue:0.098f alpha:1.0f],
                             ];
-                            
+
     }
     return self;
 }
@@ -57,19 +59,21 @@
 - (void)swipe:(UISwipeGestureRecognizer *)gesture
 {
     NSLog(@"%@", gesture);
-    NSLog(@"%d", gesture.direction);
+    NSLog(@"%lu", gesture.direction);
+    
     int direction = (gesture.direction == 1) ? 1 : -1;
+    
     currentBackground += direction;
-
-//    currentBackground++;
+    
     if (currentBackground == [colors count]) currentBackground = 0;
     if (currentBackground == -1) currentBackground = (int)[colors count] -1;
     
     float w = self.view.frame.size.width;
     float h = self.view.frame.size.height;
+    
     UIView *presentingBGView = [[UIView alloc] initWithFrame:CGRectMake(w, 0, w, h)];
+    presentingBGView.multipleTouchEnabled = YES;
     presentingBGView.backgroundColor = colors[currentBackground];
-   // [self.view addSubview:presentingBGView];
     [self.view insertSubview:presentingBGView atIndex:0];
     [backgrounds addObject:presentingBGView];
     for (UIView *view in backgrounds)
@@ -91,9 +95,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    
-       // Do any additional setup after loading the view from its nib.
 }
 
 -(void)viewWillAppear:(BOOL)animated
@@ -107,7 +108,6 @@
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 -(void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
@@ -137,5 +137,7 @@
         
     }
 }
+
+- (BOOL)prefersStatusBarHidden {return YES;};
 
 @end

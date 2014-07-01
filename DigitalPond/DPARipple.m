@@ -14,10 +14,10 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        // Initialization code
     }
     return self;
 }
+
 -(void)didMoveToWindow
 {
     for (int i = 0; i < self.rippleCount; i++)
@@ -34,18 +34,11 @@
     [self addSubview:rippleLine];
     [UIView animateWithDuration:self.rippleLifeTime delay:delay options:UIViewAnimationOptionCurveEaseOut animations:^{
         rippleLine.frame = CGRectMake(-40, -40, 80, 80);
+//      rippleLine.layer.cornerRadius = 40;
         rippleLine.alpha = 0;
     } completion:^(BOOL finished) {
         [rippleLine removeFromSuperview];
     }];
 }
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect
-{
-    // Drawing code
-}
-*/
 
 @end
