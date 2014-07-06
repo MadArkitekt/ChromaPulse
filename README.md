@@ -25,6 +25,6 @@
 
  <h3>Going Forward</h3>
  <p>
--Nearing the official release of iOS 8, I plan on rebuilding the app using the Metal framework explore just how close I can get to recreating ripples on a pond.
+-Nearing the official release of iOS 8, I plan on rebuilding the app using the Metal framework, exploring just how close I can get to recreating ripples on a pond.
 </p>
 * (I'm not making fun of anyone in the quote above. The voice expressed is actually my inner monologue when coming across interesting app features)
