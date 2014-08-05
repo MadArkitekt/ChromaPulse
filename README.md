@@ -8,7 +8,7 @@
  spawning boxes of varying colors (none of which are the same as the background color) that "ripple" (growing outward from their touch event) for a few iterations before fading
  their alpha values to 0. </p>
 (The screenshot provided is absurdly large to help show how which portions of the code are controlling which aspects of the image)
- <img src="https://raw.githubusercontent.com/MadArkitekt/ChromaPulse/master/ChromaPulse0.png" width=195.25 height=375>
+ <img style="float: center" src="https://raw.githubusercontent.com/MadArkitekt/ChromaPulse/master/ChromaPulse0.png" width=195.25 height=375>
  <hr>  
  <h3>Construction and UI Elements</h3>
  <p>
