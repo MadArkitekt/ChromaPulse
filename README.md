@@ -1,5 +1,6 @@
-# ChromaPulse
-<img src="https://raw.githubusercontent.com/MadArkitekt/ChromaPulse/master/DigitalPond/icons/iPhone/Icon-60@2x.png" >
+<div style="text-align: center"><h1>ChromaPulse</h1></div>
+
+<img src="https://raw.githubusercontent.com/MadArkitekt/ChromaPulse/master/DigitalPond/icons/iPhone/Icon-60@2x.png">
 
 <hr>
 <h3>A Digital Pond</h3>
