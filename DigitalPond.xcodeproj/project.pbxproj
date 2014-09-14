@@ -88,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				0DA30F971923BE5C00F9F2AC /* DigitalPond */,
+				0DA30F981923BE5C00F9F2AC /* Supporting Files */,
 				0DA30FB01923BE5C00F9F2AC /* DigitalPondTests */,
 				0DA30F901923BE5C00F9F2AC /* Frameworks */,
 				0DA30F8F1923BE5C00F9F2AC /* Products */,
@@ -120,7 +121,6 @@
 				0DA30FA01923BE5C00F9F2AC /* DPAAppDelegate.h */,
 				0DA30FA11923BE5C00F9F2AC /* DPAAppDelegate.m */,
 				0DA30FA31923BE5C00F9F2AC /* Images.xcassets */,
-				0DA30F981923BE5C00F9F2AC /* Supporting Files */,
 				0DA30FC51923C23A00F9F2AC /* PondVC */,
 			);
 			path = DigitalPond;
@@ -135,6 +135,7 @@
 				0DA30F9F1923BE5C00F9F2AC /* DigitalPond-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			path = DigitalPond;
 			sourceTree = "<group>";
 		};
 		0DA30FB01923BE5C00F9F2AC /* DigitalPondTests */ = {
@@ -407,6 +408,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DigitalPond/DigitalPond-Prefix.pch";
 				INFOPLIST_FILE = "DigitalPond/DigitalPond-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -420,6 +422,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DigitalPond/DigitalPond-Prefix.pch";
 				INFOPLIST_FILE = "DigitalPond/DigitalPond-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -484,6 +487,7 @@
 				0DA30FBC1923BE5C00F9F2AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0DA30FBD1923BE5C00F9F2AC /* Build configuration list for PBXNativeTarget "DigitalPondTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +496,7 @@
 				0DA30FBF1923BE5C00F9F2AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
