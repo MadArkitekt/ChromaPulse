@@ -16,7 +16,7 @@
     NSArray *colors;
     NSMutableArray *backgrounds;
     int currentBackground;
-    NSInteger ind;
+    NSInteger instanceIndex;
 }
 
 - (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
@@ -55,15 +55,22 @@
 - (void)swipe:(UISwipeGestureRecognizer *)gesture {
     NSLog(@"%@", gesture);
     NSLog(@"%lu", gesture.direction);
-    
-    int direction = (gesture.direction == 1) ? 1 : -1;
+    int direction;
+    if (gesture.direction == 1) {
+        direction = 1;
+    } else {
+        direction = -1;
+    };
+    NSLog(@"direction: %d", direction);
+//    int direction = (gesture.direction == 1) ? 1 : -1;
     
     currentBackground += direction;
     
     int colorCount = (int)[colors count];
     if (currentBackground == colorCount) {
     currentBackground = 0;
-    }
+    };
+    
     if (currentBackground == -1) {
         
         currentBackground = colorCount - 1;
@@ -79,10 +86,10 @@
     [backgrounds addObject:presentingBGView];
     for (UIView *view in backgrounds) {
         [UIView animateWithDuration:1.0 animations:^{
-            ind = [backgrounds indexOfObject:view];
+            instanceIndex = [backgrounds indexOfObject:view];
             view.frame = CGRectMake(view.frame.origin.x + w*direction, 0, w, h);
         } completion:^(BOOL finished) {
-            if (ind == 0) {
+            if (instanceIndex == 0) {
                 [view removeFromSuperview];
                 [backgrounds removeObject:view];
             }
