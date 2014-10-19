@@ -1,0 +1,4 @@
+language: objective-c
+xcode_project: DigitalPond.xcodeproj # path to your xcodeproj folder
+xcode_scheme: DigitalPondTests
+xcode_sdk: 8.1
