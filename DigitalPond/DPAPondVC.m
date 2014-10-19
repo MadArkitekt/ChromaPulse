@@ -53,15 +53,15 @@
 }
 
 - (void)swipe:(UISwipeGestureRecognizer *)gesture {
-    NSLog(@"%@", gesture);
-    NSLog(@"%lu", gesture.direction);
+//    NSLog(@"%@", gesture);
+//    NSLog(@"%lu", gesture.direction);
     int direction;
     if (gesture.direction == 1) {
         direction = 1;
     } else {
         direction = -1;
     };
-    NSLog(@"direction: %d", direction);
+//    NSLog(@"direction: %d", direction);
 //    int direction = (gesture.direction == 1) ? 1 : -1;
     
     currentBackground += direction;
