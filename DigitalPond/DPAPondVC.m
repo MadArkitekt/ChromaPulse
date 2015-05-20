@@ -10,13 +10,15 @@
 #import "DPARipple.h"
 
 @interface DPAPondVC ()
+
 @end
 
 @implementation DPAPondVC {
-    NSArray *colors;
-    NSMutableArray *backgrounds;
-    int currentBackground;
-    NSInteger instanceIndex;
+    
+    NSArray *colors; //Array containing UIColors of background views
+    NSMutableArray *backgrounds; //Mutable form of the above
+    int currentBackground; //Index of the background currently occupying the screen
+    NSInteger instanceIndex; //
 }
 
 - (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
@@ -29,11 +31,10 @@
         swipeArea.layer.cornerRadius = 20;
         [self.view addSubview:swipeArea];
         
-        
-        UISwipeGestureRecognizer *swipeRight = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipe:)];
+        UISwipeGestureRecognizer *swipeRight = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipeGestureHandler:)];
         swipeRight.direction = UISwipeGestureRecognizerDirectionRight;
         
-        UISwipeGestureRecognizer *swipeLeft = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipe:)];
+        UISwipeGestureRecognizer *swipeLeft = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipeGestureHandler:)];
         swipeLeft.direction = UISwipeGestureRecognizerDirectionLeft;
         [swipeArea addGestureRecognizer:swipeLeft];
         [swipeArea addGestureRecognizer:swipeRight];
@@ -47,12 +48,11 @@
             [UIColor colorWithRed:0.173f green:0.945f blue:0.973f alpha:1.0f],
             [UIColor colorWithRed:0.980f green:0.157f blue:0.961f alpha:1.0f]
         ];
-
     }
     return self;
 }
 
-- (void)swipe:(UISwipeGestureRecognizer *)gesture {
+- (void)swipeGestureHandler:(UISwipeGestureRecognizer *)gesture {
 //    NSLog(@"%@", gesture);
 //    NSLog(@"%lu", gesture.direction);
     int direction;
@@ -72,10 +72,9 @@
     };
     
     if (currentBackground == -1) {
-        
         currentBackground = colorCount - 1;
     };
-    
+
     float w = self.view.frame.size.width;
     float h = self.view.frame.size.height;
     
@@ -129,8 +128,8 @@
         
         CGPoint location = [touch locationInView:self.view];
         DPARipple *ripple = [[DPARipple alloc] initWithFrame:CGRectMake(location.x, location.y, 0, 0)];
-        ripple.rippleCount = 3;
-        ripple.rippleLifeTime = 2;
+        ripple.rippleCount = 2;
+        ripple.rippleLifeTime = 3;
         ripple.tintColor = otherColors[random];
         [self.view addSubview:ripple];
     }

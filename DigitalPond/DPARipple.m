@@ -7,35 +7,42 @@
 //
 
 #import "DPARipple.h"
+
 @interface DPARipple()
 @end
 
 @implementation DPARipple
 
+/**
+ :parm: CGRect, framing the UIView
+ :return: self
+ */
 - (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
-    if (self) {
+    if (!self) {
+        NSLog(@"DPARipple Failure to Initialize");
     }
     return self;
 }
 
 - (void)didMoveToWindow {
     for (int i = 0; i < self.rippleCount; i++) {
-        float delayAmount = (self.rippleLifeTime / self.rippleCount) * 3*i;
+        float delayAmount = (self.rippleLifeTime / self.rippleCount) * 1.75 * i;
         [self rippleLineWithDelay:delayAmount];
     }
 }
 
 - (void)rippleLineWithDelay:(float)delay {
-    UIView  *rippleLine = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 0, 0)];
-    rippleLine.backgroundColor = self.tintColor;
-    [self addSubview:rippleLine];
+    UIView  *rippleTrace = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 0, 0)];
+    rippleTrace.backgroundColor = self.tintColor;
+    [self addSubview:rippleTrace];
     [UIView animateWithDuration:self.rippleLifeTime delay:delay options:UIViewAnimationOptionCurveEaseOut animations:^{
-        rippleLine.frame = CGRectMake(-40, -40, 60, 60);
-
-        rippleLine.alpha = 0;
+        //Creates frame to the left and above the last rendered polygon
+        rippleTrace.frame = CGRectMake(-40, -40, 60, 60);
+        rippleTrace.layer.cornerRadius = 50;
+        rippleTrace.alpha = 0;
     } completion:^(BOOL finished) {
-        [rippleLine removeFromSuperview];
+        [rippleTrace removeFromSuperview];
     }];
 }
 
