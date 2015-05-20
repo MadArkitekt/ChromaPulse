@@ -1,0 +1,4 @@
+language: objective-c
+xcode_project: DigitalPond.xcodeproj
+xcode_scheme: DigitalPondTests
+xcode_sdk: iphonesimulator8.1
