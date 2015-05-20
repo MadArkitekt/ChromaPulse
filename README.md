@@ -17,5 +17,6 @@
 
 -
  <center><h3>Going Forward</h3></center>
+<p>Implement TravisCI and Coveralls</p>
 <p>Make a Swift version and quantify differences in speed and size of app.</p>
 
