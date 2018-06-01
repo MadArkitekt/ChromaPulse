@@ -11,6 +11,7 @@
 # Xcode
 .DS_Store
 xcuserdata
+xcuserdatad
 */build/*
 
 *.pbxuser
