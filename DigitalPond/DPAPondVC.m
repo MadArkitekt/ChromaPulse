@@ -53,8 +53,6 @@
 }
 
 - (void)swipeGestureHandler:(UISwipeGestureRecognizer *)gesture {
-//    NSLog(@"%@", gesture);
-//    NSLog(@"%lu", gesture.direction);
     int direction;
     if (gesture.direction == 1) {
         direction = 1;
@@ -81,16 +79,18 @@
     UIView *presentingBGView = [[UIView alloc] initWithFrame:CGRectMake(w, 0, w, h)];
     presentingBGView.multipleTouchEnabled = YES;
     presentingBGView.backgroundColor = colors[currentBackground];
+    
     [self.view insertSubview:presentingBGView atIndex:0];
     [backgrounds addObject:presentingBGView];
+    
     for (UIView *view in backgrounds) {
-        [UIView animateWithDuration:1.0 animations:^{
-            instanceIndex = [backgrounds indexOfObject:view];
+        [UIView animateWithDuration:0.5 animations:^{
+            self->instanceIndex = [self->backgrounds indexOfObject:view];
             view.frame = CGRectMake(view.frame.origin.x + w*direction, 0, w, h);
         } completion:^(BOOL finished) {
-            if (instanceIndex == 0) {
+            if (self->instanceIndex == 0) {
                 [view removeFromSuperview];
-                [backgrounds removeObject:view];
+                [self->backgrounds removeObject:view];
             }
         }];
     }
@@ -128,8 +128,8 @@
         
         CGPoint location = [touch locationInView:self.view];
         DPARipple *ripple = [[DPARipple alloc] initWithFrame:CGRectMake(location.x, location.y, 0, 0)];
-        ripple.rippleCount = 2;
-        ripple.rippleLifeTime = 3;
+        ripple.rippleCount = 1;
+        ripple.rippleLifeTime = 1;
         ripple.tintColor = otherColors[random];
         [self.view addSubview:ripple];
     }
