@@ -9,16 +9,14 @@
 #import "DPAPondVC.h"
 #import "DPARipple.h"
 
-@interface DPAPondVC ()
-
-@end
-
 @implementation DPAPondVC {
+    //Array containing UIColors of background views
+    NSArray *colors;
+    NSMutableArray *backgrounds;
     
-    NSArray *colors; //Array containing UIColors of background views
-    NSMutableArray *backgrounds; //Mutable form of the above
-    int currentBackground; //Index of the background currently occupying the screen
-    NSInteger instanceIndex; //
+    //Index of the background currently occupying the screen
+    int currentBackground;
+    NSInteger instanceIndex;
 }
 
 - (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
@@ -137,6 +135,6 @@
 
 - (BOOL)prefersStatusBarHidden {
     return YES;
-};
+}
 
 @end

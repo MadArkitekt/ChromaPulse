@@ -8,9 +8,6 @@
 
 #import "DPARipple.h"
 
-@interface DPARipple()
-@end
-
 @implementation DPARipple
 
 /**
