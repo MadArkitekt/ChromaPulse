@@ -9,8 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface DPARipple : UIView
-
 @property (nonatomic) float rippleCount;
 @property (nonatomic) float rippleLifeTime;
-
 @end
