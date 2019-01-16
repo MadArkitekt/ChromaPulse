@@ -1,1 +1,2 @@
 language: objective-c
+xcodebuild -scheme DigitalPond -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
