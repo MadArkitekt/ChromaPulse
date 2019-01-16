@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,16 +13,15 @@
 		0DA30F9C1923BE5C00F9F2AC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0DA30F9A1923BE5C00F9F2AC /* InfoPlist.strings */; };
 		0DA30F9E1923BE5C00F9F2AC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DA30F9D1923BE5C00F9F2AC /* main.m */; };
 		0DA30FA21923BE5C00F9F2AC /* DPAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DA30FA11923BE5C00F9F2AC /* DPAAppDelegate.m */; };
-		0DA30FA41923BE5C00F9F2AC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DA30FA31923BE5C00F9F2AC /* Images.xcassets */; };
 		0DA30FAB1923BE5C00F9F2AC /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DA30FAA1923BE5C00F9F2AC /* XCTest.framework */; };
 		0DA30FAC1923BE5C00F9F2AC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DA30F911923BE5C00F9F2AC /* Foundation.framework */; };
 		0DA30FAD1923BE5C00F9F2AC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DA30F951923BE5C00F9F2AC /* UIKit.framework */; };
 		0DA30FB51923BE5C00F9F2AC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0DA30FB31923BE5C00F9F2AC /* InfoPlist.strings */; };
 		0DA30FB71923BE5C00F9F2AC /* DigitalPondTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DA30FB61923BE5C00F9F2AC /* DigitalPondTests.m */; };
-		0DA30FC31923C1FD00F9F2AC /* DPAPondVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DA30FC11923C1FD00F9F2AC /* DPAPondVC.m */; };
-		0DA30FC41923C1FD00F9F2AC /* DPAPondVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DA30FC21923C1FD00F9F2AC /* DPAPondVC.xib */; };
-		0DA30FC71923C3BE00F9F2AC /* DPALava.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DA30FC61923C3BE00F9F2AC /* DPALava.xib */; };
-		0DA30FCB1923C71C00F9F2AC /* DPARipple.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DA30FCA1923C71C00F9F2AC /* DPARipple.m */; };
+		969708EF21EFBDC200BF4CCA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DA30FA31923BE5C00F9F2AC /* Images.xcassets */; };
+		969708F221EFBE9600BF4CCA /* DPARipple.m in Sources */ = {isa = PBXBuildFile; fileRef = 969708F121EFBE9600BF4CCA /* DPARipple.m */; };
+		969708F621EFBEA300BF4CCA /* DPAPondVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 969708F321EFBEA300BF4CCA /* DPAPondVC.m */; };
+		969708F721EFBEA300BF4CCA /* DPAPondVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 969708F521EFBEA300BF4CCA /* DPAPondVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,12 +51,11 @@
 		0DA30FB21923BE5C00F9F2AC /* DigitalPondTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DigitalPondTests-Info.plist"; sourceTree = "<group>"; };
 		0DA30FB41923BE5C00F9F2AC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0DA30FB61923BE5C00F9F2AC /* DigitalPondTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DigitalPondTests.m; sourceTree = "<group>"; };
-		0DA30FC01923C1FD00F9F2AC /* DPAPondVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPAPondVC.h; sourceTree = "<group>"; };
-		0DA30FC11923C1FD00F9F2AC /* DPAPondVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPAPondVC.m; sourceTree = "<group>"; };
-		0DA30FC21923C1FD00F9F2AC /* DPAPondVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DPAPondVC.xib; sourceTree = "<group>"; };
-		0DA30FC61923C3BE00F9F2AC /* DPALava.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DPALava.xib; sourceTree = "<group>"; };
-		0DA30FC91923C71C00F9F2AC /* DPARipple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPARipple.h; sourceTree = "<group>"; };
-		0DA30FCA1923C71C00F9F2AC /* DPARipple.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPARipple.m; sourceTree = "<group>"; };
+		969708F021EFBE9600BF4CCA /* DPARipple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DPARipple.h; path = Views/DPARipple.h; sourceTree = "<group>"; };
+		969708F121EFBE9600BF4CCA /* DPARipple.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DPARipple.m; path = Views/DPARipple.m; sourceTree = "<group>"; };
+		969708F321EFBEA300BF4CCA /* DPAPondVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DPAPondVC.m; path = Controllers/DPAPondVC.m; sourceTree = "<group>"; };
+		969708F421EFBEA300BF4CCA /* DPAPondVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DPAPondVC.h; path = Controllers/DPAPondVC.h; sourceTree = "<group>"; };
+		969708F521EFBEA300BF4CCA /* DPAPondVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DPAPondVC.xib; path = Controllers/DPAPondVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,9 +85,9 @@
 		0DA30F851923BE5C00F9F2AC = {
 			isa = PBXGroup;
 			children = (
-				0DA30FCC1923C73500F9F2AC /* Ripple */,
-				0DA30FC51923C23A00F9F2AC /* PondVC */,
 				0DA30F971923BE5C00F9F2AC /* DigitalPond */,
+				0DA30FCC1923C73500F9F2AC /* Views */,
+				0DA30FC51923C23A00F9F2AC /* Controllers */,
 				0DA30F981923BE5C00F9F2AC /* Supporting Files */,
 				0DA30FB01923BE5C00F9F2AC /* DigitalPondTests */,
 				0DA30F901923BE5C00F9F2AC /* Frameworks */,
@@ -122,7 +120,6 @@
 			children = (
 				0DA30FA01923BE5C00F9F2AC /* DPAAppDelegate.h */,
 				0DA30FA11923BE5C00F9F2AC /* DPAAppDelegate.m */,
-				0DA30FA31923BE5C00F9F2AC /* Images.xcassets */,
 			);
 			path = DigitalPond;
 			sourceTree = "<group>";
@@ -130,6 +127,7 @@
 		0DA30F981923BE5C00F9F2AC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0DA30FA31923BE5C00F9F2AC /* Images.xcassets */,
 				0DA30F991923BE5C00F9F2AC /* DigitalPond-Info.plist */,
 				0DA30F9A1923BE5C00F9F2AC /* InfoPlist.strings */,
 				0DA30F9D1923BE5C00F9F2AC /* main.m */,
@@ -157,33 +155,24 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		0DA30FC51923C23A00F9F2AC /* PondVC */ = {
+		0DA30FC51923C23A00F9F2AC /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				0DA30FC21923C1FD00F9F2AC /* DPAPondVC.xib */,
-				0DA30FC01923C1FD00F9F2AC /* DPAPondVC.h */,
-				0DA30FC11923C1FD00F9F2AC /* DPAPondVC.m */,
-				0DA30FC81923C67D00F9F2AC /* LavaView */,
+				969708F421EFBEA300BF4CCA /* DPAPondVC.h */,
+				969708F321EFBEA300BF4CCA /* DPAPondVC.m */,
+				969708F521EFBEA300BF4CCA /* DPAPondVC.xib */,
 			);
-			name = PondVC;
+			name = Controllers;
 			path = DigitalPond;
 			sourceTree = "<group>";
 		};
-		0DA30FC81923C67D00F9F2AC /* LavaView */ = {
+		0DA30FCC1923C73500F9F2AC /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				0DA30FC61923C3BE00F9F2AC /* DPALava.xib */,
+				969708F021EFBE9600BF4CCA /* DPARipple.h */,
+				969708F121EFBE9600BF4CCA /* DPARipple.m */,
 			);
-			name = LavaView;
-			sourceTree = "<group>";
-		};
-		0DA30FCC1923C73500F9F2AC /* Ripple */ = {
-			isa = PBXGroup;
-			children = (
-				0DA30FC91923C71C00F9F2AC /* DPARipple.h */,
-				0DA30FCA1923C71C00F9F2AC /* DPARipple.m */,
-			);
-			name = Ripple;
+			name = Views;
 			path = DigitalPond;
 			sourceTree = "<group>";
 		};
@@ -233,7 +222,7 @@
 			attributes = {
 				CLASSPREFIX = DPA;
 				LastUpgradeCheck = 0940;
-				ORGANIZATIONNAME = "Ed Salter";
+				ORGANIZATIONNAME = techED;
 				TargetAttributes = {
 					0DA30F8D1923BE5C00F9F2AC = {
 						DevelopmentTeam = 5V8D34KHHF;
@@ -244,7 +233,7 @@
 				};
 			};
 			buildConfigurationList = 0DA30F891923BE5C00F9F2AC /* Build configuration list for PBXProject "DigitalPond" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -266,10 +255,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				969708EF21EFBDC200BF4CCA /* Images.xcassets in Resources */,
+				969708F721EFBEA300BF4CCA /* DPAPondVC.xib in Resources */,
 				0DA30F9C1923BE5C00F9F2AC /* InfoPlist.strings in Resources */,
-				0DA30FC71923C3BE00F9F2AC /* DPALava.xib in Resources */,
-				0DA30FC41923C1FD00F9F2AC /* DPAPondVC.xib in Resources */,
-				0DA30FA41923BE5C00F9F2AC /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,10 +276,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				969708F621EFBEA300BF4CCA /* DPAPondVC.m in Sources */,
 				0DA30FA21923BE5C00F9F2AC /* DPAAppDelegate.m in Sources */,
+				969708F221EFBE9600BF4CCA /* DPARipple.m in Sources */,
 				0DA30F9E1923BE5C00F9F2AC /* main.m in Sources */,
-				0DA30FC31923C1FD00F9F2AC /* DPAPondVC.m in Sources */,
-				0DA30FCB1923C71C00F9F2AC /* DPARipple.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,7 +434,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DigitalPond/DigitalPond-Prefix.pch";
 				INFOPLIST_FILE = "DigitalPond/DigitalPond-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "me.edsalter.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -464,7 +452,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DigitalPond/DigitalPond-Prefix.pch";
 				INFOPLIST_FILE = "DigitalPond/DigitalPond-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "me.edsalter.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
