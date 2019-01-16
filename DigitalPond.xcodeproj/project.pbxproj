@@ -13,15 +13,19 @@
 		0DA30F9C1923BE5C00F9F2AC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0DA30F9A1923BE5C00F9F2AC /* InfoPlist.strings */; };
 		0DA30F9E1923BE5C00F9F2AC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DA30F9D1923BE5C00F9F2AC /* main.m */; };
 		0DA30FA21923BE5C00F9F2AC /* DPAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DA30FA11923BE5C00F9F2AC /* DPAAppDelegate.m */; };
-		0DA30FAB1923BE5C00F9F2AC /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DA30FAA1923BE5C00F9F2AC /* XCTest.framework */; };
 		0DA30FAC1923BE5C00F9F2AC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DA30F911923BE5C00F9F2AC /* Foundation.framework */; };
 		0DA30FAD1923BE5C00F9F2AC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DA30F951923BE5C00F9F2AC /* UIKit.framework */; };
 		0DA30FB51923BE5C00F9F2AC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0DA30FB31923BE5C00F9F2AC /* InfoPlist.strings */; };
-		0DA30FB71923BE5C00F9F2AC /* DigitalPondTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DA30FB61923BE5C00F9F2AC /* DigitalPondTests.m */; };
 		969708EF21EFBDC200BF4CCA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DA30FA31923BE5C00F9F2AC /* Images.xcassets */; };
 		969708F221EFBE9600BF4CCA /* DPARipple.m in Sources */ = {isa = PBXBuildFile; fileRef = 969708F121EFBE9600BF4CCA /* DPARipple.m */; };
 		969708F621EFBEA300BF4CCA /* DPAPondVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 969708F321EFBEA300BF4CCA /* DPAPondVC.m */; };
 		969708F721EFBEA300BF4CCA /* DPAPondVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 969708F521EFBEA300BF4CCA /* DPAPondVC.xib */; };
+		969708F821EFC7B100BF4CCA /* DPARipple.m in Sources */ = {isa = PBXBuildFile; fileRef = 969708F121EFBE9600BF4CCA /* DPARipple.m */; };
+		969708F921EFC7E400BF4CCA /* DPAPondVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 969708F321EFBEA300BF4CCA /* DPAPondVC.m */; };
+		969708FA21EFC7EB00BF4CCA /* DPAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DA30FA11923BE5C00F9F2AC /* DPAAppDelegate.m */; };
+		969708FB21EFC7F300BF4CCA /* DPAPondVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 969708F521EFBEA300BF4CCA /* DPAPondVC.xib */; };
+		969708FC21EFC80200BF4CCA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DA30F9D1923BE5C00F9F2AC /* main.m */; };
+		969708FE21EFC83400BF4CCA /* DPARippleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 969708FD21EFC83400BF4CCA /* DPARippleTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,12 +54,12 @@
 		0DA30FAA1923BE5C00F9F2AC /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		0DA30FB21923BE5C00F9F2AC /* DigitalPondTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DigitalPondTests-Info.plist"; sourceTree = "<group>"; };
 		0DA30FB41923BE5C00F9F2AC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		0DA30FB61923BE5C00F9F2AC /* DigitalPondTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DigitalPondTests.m; sourceTree = "<group>"; };
 		969708F021EFBE9600BF4CCA /* DPARipple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DPARipple.h; path = Views/DPARipple.h; sourceTree = "<group>"; };
 		969708F121EFBE9600BF4CCA /* DPARipple.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DPARipple.m; path = Views/DPARipple.m; sourceTree = "<group>"; };
 		969708F321EFBEA300BF4CCA /* DPAPondVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DPAPondVC.m; path = Controllers/DPAPondVC.m; sourceTree = "<group>"; };
 		969708F421EFBEA300BF4CCA /* DPAPondVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DPAPondVC.h; path = Controllers/DPAPondVC.h; sourceTree = "<group>"; };
 		969708F521EFBEA300BF4CCA /* DPAPondVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DPAPondVC.xib; path = Controllers/DPAPondVC.xib; sourceTree = "<group>"; };
+		969708FD21EFC83400BF4CCA /* DPARippleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPARippleTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +77,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0DA30FAB1923BE5C00F9F2AC /* XCTest.framework in Frameworks */,
 				0DA30FAD1923BE5C00F9F2AC /* UIKit.framework in Frameworks */,
 				0DA30FAC1923BE5C00F9F2AC /* Foundation.framework in Frameworks */,
 			);
@@ -140,7 +143,7 @@
 		0DA30FB01923BE5C00F9F2AC /* DigitalPondTests */ = {
 			isa = PBXGroup;
 			children = (
-				0DA30FB61923BE5C00F9F2AC /* DigitalPondTests.m */,
+				969708FD21EFC83400BF4CCA /* DPARippleTests.m */,
 				0DA30FB11923BE5C00F9F2AC /* Supporting Files */,
 			);
 			path = DigitalPondTests;
@@ -266,6 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0DA30FB51923BE5C00F9F2AC /* InfoPlist.strings in Resources */,
+				969708FB21EFC7F300BF4CCA /* DPAPondVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,7 +291,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0DA30FB71923BE5C00F9F2AC /* DigitalPondTests.m in Sources */,
+				969708FC21EFC80200BF4CCA /* main.m in Sources */,
+				969708FA21EFC7EB00BF4CCA /* DPAAppDelegate.m in Sources */,
+				969708FE21EFC83400BF4CCA /* DPARippleTests.m in Sources */,
+				969708F821EFC7B100BF4CCA /* DPARipple.m in Sources */,
+				969708F921EFC7E400BF4CCA /* DPAPondVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,7 +363,7 @@
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_NO_COMMON_BLOCKS = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -368,7 +376,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				ONLY_ACTIVE_ARCH = YES;
 				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
@@ -409,14 +417,14 @@
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_NO_COMMON_BLOCKS = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -434,10 +442,11 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DigitalPond/DigitalPond-Prefix.pch";
 				INFOPLIST_FILE = "DigitalPond/DigitalPond-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "me.edsalter.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -452,10 +461,11 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DigitalPond/DigitalPond-Prefix.pch";
 				INFOPLIST_FILE = "DigitalPond/DigitalPond-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "me.edsalter.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -464,11 +474,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DigitalPond.app/DigitalPond";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_NO_COMMON_BLOCKS = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DigitalPond/DigitalPond-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -478,6 +488,7 @@
 				INFOPLIST_FILE = "DigitalPondTests/DigitalPondTests-Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = "me.edsalter.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -487,16 +498,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DigitalPond.app/DigitalPond";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_NO_COMMON_BLOCKS = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DigitalPond/DigitalPond-Prefix.pch";
 				INFOPLIST_FILE = "DigitalPondTests/DigitalPondTests-Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = "me.edsalter.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
