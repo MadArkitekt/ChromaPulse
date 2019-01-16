@@ -1,5 +1,6 @@
 language: objective-c
-osx_image: xcode10.1
-xcode_project: DigitalPond.xcodeproj # path to your xcodeproj folder
-xcode_scheme: DigitalPondTests
-xcode_destination: platform=iOS Simulator,OS=11.1,name=iPhone X
+osx_image: xcode10.0
+xcode_project: DigitalPond.xcodeproj
+xcode_scheme: DigitalPond
+xcode_sdk: iphonesimulator10.2
+script: xcodebuild -project DigitalPond.xcodeproj -scheme DigitalPond -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
