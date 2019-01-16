@@ -31,14 +31,16 @@
         [self.view addSubview:swipeArea];
 
         colors = @[
-            [UIColor colorWithRed:0.490f green:0.984f blue:0.306f alpha:1.0f],
-            [UIColor colorWithRed:0.984f green:0.553f blue:0.133f alpha:1.0f],
-            [UIColor colorWithRed:0.741f green:0.400f blue:0.984f alpha:1.0f],
-            [UIColor colorWithRed:0.984f green:0.863f blue:0.098f alpha:1.0f],
-            [UIColor colorWithRed:0.000f green:0.000f blue:0.984f alpha:1.0f],
-            [UIColor colorWithRed:0.173f green:0.945f blue:0.973f alpha:1.0f],
-            [UIColor colorWithRed:0.980f green:0.157f blue:0.961f alpha:1.0f]
-        ];
+                   [UIColor colorWithRed:0.949 green:0.906 blue:0.992 alpha:1.00],
+                   [UIColor colorWithRed:0.855 green:0.706 blue:0.992 alpha:1.00],
+                   [UIColor colorWithRed:0.729 green:0.541 blue:0.976 alpha:1.00],
+                   [UIColor colorWithRed:0.596 green:0.392 blue:0.984 alpha:1.00],
+                   [UIColor colorWithRed:0.498 green:0.267 blue:0.969 alpha:1.00],
+                   [UIColor colorWithRed:0.384 green:0.129 blue:0.918 alpha:1.00],
+                   [UIColor colorWithRed:0.337 green:0.125 blue:0.894 alpha:1.00],
+                   [UIColor colorWithRed:0.216 green:0.086 blue:0.690 alpha:1.00],
+                   [UIColor colorWithRed:0.188 green:0.071 blue:0.600 alpha:1.00]
+                   ];
     }
     return self;
 }
@@ -46,6 +48,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+}
+
+- (void)viewDidLayoutSubviews {
+    [super viewDidLayoutSubviews];
+
 }
 
 - (void)viewWillAppear:(BOOL)animated {
