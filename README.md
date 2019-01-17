@@ -1,7 +1,13 @@
 [![Build Status](https://travis-ci.org/MadArkitekt/ChromaPulse.svg?branch=master)](https://travis-ci.org/MadArkitekt/ChromaPulse)
 <hr>
 <center><h3>A Digital Pond</h3></center>
-<p><strong>ChromaPulse</strong> demonstrates how responsive, visually brilliant apps don't always require copious code. <strong>ChromPulse</strong> recognizes touch events, as well as any changes therein, responding with a myriad of polychromatic boxes (none of the same color as the current background) pulse, growing outward from their perspective touch events for 2 iterations before fading out.</p>
+<p><strong>ChromaPulse</strong> demonstrates how responsive, visually brilliant apps don't necessitate convoluted codebases.</p>
+<p>
+<ul>
+    <li>A _UIVisualEffectView_ just below the status bar facilitateing navigtion between a pallette of purple background views.</li>
+    <li>User interactions outside of the _UIVisualEffectView_ yield a bevy of polychromatic ripples that follow the user's touch. Each ripple starts square, then grows, rounds, and fades back to the nothingness from which it came.</li>
+</ul>
+</p>
 <center><em>The screenshot below illustrates the growing "ripples" tracking touch events on the green "pond". Touches began with the large purple square just left of center and curled around twice before ending in the top-righthand corner, demarcated by the smallest square. </em></center>  
 <center><img style="float: center" src="ChromaPulse.gif" width=195.25 height=375></center>
 <center><h3>Construction and UI Elements</h3></center>
