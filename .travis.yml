@@ -1,1 +1,6 @@
 language: objective-c
+osx_image: xcode10.0
+xcode_project: DigitalPond.xcodeproj
+xcode_scheme: DigitalPond
+xcode_sdk: iphonesimulator10.2
+script: xcodebuild -project DigitalPond.xcodeproj -scheme DigitalPond -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO

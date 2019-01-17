@@ -1,5 +1,5 @@
 //
-//  DPARip.m
+//  DPARipple.m
 //  DigitalPond
 //
 //  Created by MadArkitekt on 5/14/14.
