@@ -12,7 +12,7 @@
 <center><img style="float: center" src="ChromaPulse.gif" width=195.25 height=375></center>
 <center><h3>Construction and UI Elements</h3></center>
 
-- <strong><u>Continuous Integration</u></strong>
+- <strong><u>Continuous Integration</u></strong>  
         - Travis-Ci
 - <strong><u>Template:</u></strong>
 	- Single View Application  
