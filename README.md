@@ -26,11 +26,9 @@
 	- Occluded region = subclassed <strong>UIButton</strong> responsive only to left and right swiping (*The Swift version I'm currently building will use a <strong>UIPanGestureRecognizer</strong>*)
 
 <h3>Going Forward</h3>
-	- Leverage Apple's latest UITesting<br>
-	- Make a Swift version and quantify differences in speed and size of app.
-
-<h3>Todo</h3>
         <ul>
+	 <li>Leverage Apple's latest UITesting</li>
+	 <li>Make a Swift version and quantify differences in speed and size of app.</li>
          <li>Leverage Accelerometers</li>
          <li>Add controls for various attributes</li>
-         <li>Write in Swift</li>
+        </ul>
