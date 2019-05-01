@@ -13,7 +13,7 @@
 <center><h3>Construction and UI Elements</h3></center>
 
 - <strong><u>Continuous Integration</u></strong>  
-        - Travis-Ci
+        - [TODO: Fix] Travis-Ci
 - <strong><u>Template:</u></strong>
 	- Single View Application  
  
@@ -29,3 +29,7 @@
 	- Leverage Apple's latest UITesting<br>
 	- Make a Swift version and quantify differences in speed and size of app.
 
+<h3>Todo</h3>
+        - Leverage Accelerometers 
+        - Add controls for various attributes 
+        - Write in Swift
