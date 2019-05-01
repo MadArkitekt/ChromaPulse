@@ -30,6 +30,7 @@
 	- Make a Swift version and quantify differences in speed and size of app.
 
 <h3>Todo</h3>
-        - Leverage Accelerometers 
-        - Add controls for various attributes 
-        - Write in Swift
+        <ul>
+         <li>Leverage Accelerometers</li>
+         <li>Add controls for various attributes</li>
+         <li>Write in Swift</li>
